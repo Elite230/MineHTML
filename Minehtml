@@ -4,7 +4,7 @@
 		
 		<title>MineHTML</title>
 		<link id="vtfont" href="./MineHTML_files/css2" rel="stylesheet">
-		<link rel="shortcut icon" type="image/ico" href="">
+		<link rel="shortcut icon" type="image/ico" href="https://elite230.github.io/MineHTML/Minecraft.ico">
 	<style>
 		body {
 			overflow: hidden; /* Hide scrollbars */
