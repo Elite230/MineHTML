@@ -3,8 +3,8 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
 		<title>MineHTML</title>
-		<link id="vtfont" href="./MineHTML_files/css2" rel="stylesheet">
-		<link rel="shortcut icon" type="image/ico" href="https://elite230.github.io/minehtml/Minecraft.ico">
+		<link id="vtfont" href="./minehtml_files/css2" rel="stylesheet">
+		<link rel="shortcut icon" type="image/ico" href="">
 	<style>
 		body {
 			overflow: hidden; /* Hide scrollbars */
@@ -100,7 +100,7 @@
 	<p id="savedirections" class="hidden" style="position: absolute; top: 40px; left: 10px; z-index: 1; background-color: rgba(255, 255, 255, 0.3);">
 		To save your world, copy/paste the saveString<br>
 		from this box into the code on line 188.<br>
-		var loadString = "Your Save Code Here";<br>
+		var loadString = "Your Code Here";<br>
 		Then save the program as a Spin-off.
 	</p>
 	<div class="world-select hidden" id="worlds"><div class="world" id="1610458958390"><strong>Fountain (Pre-loaded)</strong><br>Alpha 0.7.0<br>612 bytes used</div></div>
@@ -108,7 +108,7 @@
 	<script>
 		// Code edits will erase the world.
 		// Place save code here to load your world. Make extra sure you got it copied so you don't paste in the wrong thing and delete your world on accident lol
-		var loadString = "Fountain;52umfj;d,8,7,-w,6s,3;Alpha 0.7.0;2,1f,28,29,2a,8j,9c,e9,gi,18w,1z5,21e,2ts,3ma,4eo,54x,576;0,0,0,tj4,19c1,19c2,19c3,130k,k28,k29,k2a,k2b,k2c,tq8,7lt,7lu,7lv,137o,k9c,h3l,h3m,h3n,k9g,1fk,1fl,1fm,1fn,1fo,1fp,16j4,16j5,16j6,16j7,16j8,e39,x2d,7sw,7sx,7sy,7sz,7t0,kgg,hap,haq,har,kgk,1mo,1mp,1mq,1mr,1ms,1mt,4sw,b4h,b4i,b4j,4t0,10et,b4x,b4y,b4z,b5d,b5e,b5f,b5t,b5u,b5v,knl,hhu,knn,1ts,1tt,1tu,1tv,1tw,1tx,500,501,502,503,504,10lx,50i,50y,51e,hoy,20w,20x,20y,20z,210,211,574,575,576,577,578,10t1,280,281,282,283,284,285,1gsw,1gsx,1gsy,1gsz,1gt0,evp,1dnp;0,0,-1,1fz,e3j,nlb,1n3,qxr,1u7,r4v,21b,rbz,28f,evz,1dnz"
+		var loadString = "Fountain;52umfj;h,6,-4,5,2t,2;Alpha 0.7.0;2,1n,28,29,2a,8r,9c,fv,gi,11s,18w,20r,21e,2ts,3ma,4eo,56j,576;0,0,0,tj4,1cht,1chu,1chv,tj8,7f4,7f5,7f6,7f7,7f8,k2o,k2p,k2q,k2r,k2s,18i,aqa,aqq,ar6,ww0,7lt,7lu,7lv,16dg,7m8,4gh,4gi,4gj,7mc,k9s,k9w,1fk,1fl,1fm,1fn,1fo,1fp,19ow,19ox,axe,19oz,19p0,e39,axu,aya,txc,7sx,7sy,7sz,txg,7tc,4nl,4nm,4nn,7tg,kgw,kh0,1mo,1mp,1mq,1mr,1ms,1mt,hg0,b4h,b4i,b4j,hg4,13kl,b4x,b4y,b4z,b5d,b5e,b5f,b5t,b5u,b5v,80h,4uq,80j,ko1,ko3,1ts,1tt,1tu,1tv,1tw,1tx,hn4,nyp,502,10lv,hn8,13rp,50i,50y,51e,1ggi,20w,20x,20y,20z,210,211,hu8,hu9,1glu,hub,huc,13yt,280,281,282,283,284,285,1jyo,1jyp,1jyq,1jyr,1jys,evp;0,0,-1,1fz,e3j,1n3,qxr,1u7,r4v,21b,rbz,28f,evz"
 	</script>
 	<script type="x-shader/vertex" id="blockVertexShader">
 		attribute vec3  aVertex;
@@ -5327,7 +5327,7 @@ function minehtml() {
 		initPlayer()
 		initWebgl()
 
-		if (win.location.origin === "https://www.kasandbox.org" && (loadString || Mineht.toString().length !== 149456)) {
+		if (win.location.origin === "https://www.kasandbox.org" && (loadString || minehtml.toString().length !== 149456)) {
 			// Prevent Ctrl F
 			message.innerHTML = '.oot lanigiro eht tuo kcehc ot>rb<erus eb ,siht ekil uoy fI>rb<.dralliW yb >a/<nahKeniM>"wen_"=tegrat "8676731005517465/cm/sc/gro.ymedacanahk.www//:sptth"=ferh a< fo>rb<ffo-nips a si margorp sihT'.split("").reverse().join("")
 		}
@@ -5346,7 +5346,7 @@ function minehtml() {
 	// Define all the scene draw functions
 	(function() {
 		function title() {
-			let title = "MINEHTML"
+			let title = "MINE.HTML"
 			let subtext = "HTML EDITION"
 			let font = "VT323,monospace"
 			strokeWeight(1)
@@ -5387,7 +5387,7 @@ function minehtml() {
 			fill(220)
 			ctx.font = "20px VT323"
 			ctx.textAlign = 'left'
-			text("Minecraft " + version, width - (width - 2), height - 2)
+			text("MineHTML " + version, width - (width - 2), height - 2)
 		}
 
 		drawScreens.play = () => {
@@ -5530,7 +5530,7 @@ function minehtml() {
 	return gameLoop
 }
 
-init = ()
+init = minehtml()
 if (window.parent.raf) {
 	window.cancelAnimationFrame(window.parent.raf)
 	console.log("Canceled", window.parent.raf)
